@@ -7,6 +7,8 @@ import { ItemsCards } from './components/ItemsCards/ItemsCards'
 import { Sports } from './components/scripts/sports'
 import principalImgSection from './assets/principalSectionImg.jpg'
 
+import Slider from './components/layouts/Slider/Slider'
+
 function App() {
 
   return (
@@ -34,8 +36,11 @@ function App() {
                 description={Sports.description} />)}
             </News>
           </div>
-
         </Main>
+        <div>
+        <Slider/>
+        </div>
+        
       </Home>
     </>
   )
