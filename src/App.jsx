@@ -10,7 +10,12 @@ import principalImgSection from './assets/principalSectionImg.jpg'
 import Slider from './components/layouts/Slider/Slider'
 
 function App() {
-
+  const slide=[
+    'https://i.pinimg.com/736x/f0/19/14/f019140c1f1ae78085c3dcd68734eccf.jpg',
+    'https://e1.pxfuel.com/desktop-wallpaper/819/607/desktop-wallpaper-volleyball-court-volleyball.jpg',
+    'https://w.forfun.com/fetch/ea/eadec093535037695ee6177750b76a3a.jpeg',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIGu-RTE2_DO2LrY9iDrgyLHop895P6WIdta6hCUFK2w&s'
+  ]
   return (
     <>
       <Home>
@@ -37,8 +42,8 @@ function App() {
             </News>
           </div>
         </Main>
-        <div>
-        <Slider/>
+        <div className='w-[100%] mx-8 pt-10'>
+        <Slider Slides={slide}/>
         </div>
         
       </Home>
