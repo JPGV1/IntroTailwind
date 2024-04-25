@@ -7,7 +7,8 @@ import { ItemsCards } from './components/ItemsCards/ItemsCards'
 import { Sports } from './components/scripts/sports'
 import principalImgSection from './assets/principalSectionImg.jpg'
 
-import Slider from './components/layouts/Slider/Slider'
+import {Carousel} from './components/layouts/Slider/Slider'
+import { Footer } from './components/layouts/Footer/Footer'
 
 function App() {
   const slide=[
@@ -21,11 +22,11 @@ function App() {
       <Home>
         <Header />
         <Main>
-          <div className="flex w-full bg-black">
+          <div className="flex w-full justify-evenly ">
             <News>
-              <div className=' flex flex-col justify-center items-center ml-16'>
+              <div className=' flex flex-col justify-center items-center '>
                 <img className='w-4/5' src={principalImgSection} alt="" />
-                <div className='w-4/5 flex flex-col items-start text-sm bg-zinc-600'>
+                <div className='w-4/5 flex flex-col items-start text-sm '>
                 <h1 className='mb-2 mt-4'>Los Deportes</h1>
                 <p>Los deportes siempre han ocupado un lugar fundamental en mi vida. Desde temprana edad, encontré en ellos una fuente inagotable de pasión y energía. La competencia, el trabajo en equipo y la superación personal que los deportes ofrecen han moldeado mi carácter y han sido una constante inspiración en mi día a día.</p>
                 </div>
@@ -41,11 +42,15 @@ function App() {
                 description={Sports.description} />)}
             </News>
           </div>
-        </Main>
-        <div className='w-[100%] mx-8 pt-10'>
-        <Slider Slides={slide}/>
+        
+        <div className=' flex justify-center items-center mb-12 p-1 '>
+        <Carousel Slides={slide}/>
         </div>
         
+        </Main>
+        <div>
+          <Footer/>
+        </div>
       </Home>
     </>
   )

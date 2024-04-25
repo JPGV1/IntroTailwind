@@ -21,7 +21,7 @@ export   const Sports = [
         id:3,
         img:football,
         time: 'Practicado desde hace 8 años',
-        description: 'El football, lo he practicado desde muy pequeño sin embargo el cariño por el es muy poco pues se volvio recurrente, soy portero,  pues me gusta esforzarme por mejorar mis reflejos y tiempos de reacción.'
+        description: 'Aunque he practicado fútbol desde muy pequeño, mi pasión por él es limitada debido a su carácter recurrente. Me desempeño como portero, ya que disfruto esforzarme por mejorar mis reflejos y tiempos de reacción.'
     },
     // {
     //     id:4,
